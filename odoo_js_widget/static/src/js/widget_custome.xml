@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="odoo_js_widget.available_stock_custome" owl="1">
+        <i
+            t-att-class="dynamiccolor"
+            t-on-mouseout="() => this.checkstockout()"
+            t-on-mouseover="(ev) => this.checkstock(ev)"
+        />
+    </t>
+
+    <t t-name="odoo_js_widget.available_stock_popup_custome" owl="1">
+        <div class="">
+            <button class="">
+                <h1 t-att-class="dynamiccolor">
+                    availabe stock is
+                    <t t-esc="method_test" />
+                </h1>
+            </button>
+        </div>
+    </t>
+</templates>

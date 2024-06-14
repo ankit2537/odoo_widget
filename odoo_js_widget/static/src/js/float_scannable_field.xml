@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t
+        t-name="odoo_js_widget.available_stock"
+        t-inherit="web.FloatField"
+        t-inherit-mode="primary"
+        owl="1"
+    >
+        <xpath expr="//input" position="after">
+            <i
+                t-att-class="dynamiccolor"
+                t-on-mouseout="() => this.checkstockout()"
+                t-on-mouseover="(ev) => this.checkstock(ev)"
+            />
+        </xpath>
+    </t>
+
+    <t t-name="odoo_js_widget.available_stock_popup" owl="1">
+        <div class="">
+            <button class="">
+                <h1 t-att-class="dynamiccolor">
+                    availabe stock is
+                    <t t-esc="method_test" />
+                </h1>
+            </button>
+        </div>
+    </t>
+</templates>

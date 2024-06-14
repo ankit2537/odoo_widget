@@ -1,0 +1,20 @@
+# Do NOT update manually; changes here will be overwritten by Copier
+_commit: v1.17.2
+generate_requirements_txt: true
+github_check_license: true
+github_ci_extra_env: {}
+github_enable_codecov: true
+github_enable_makepot: true
+github_enable_stale_action: true
+github_enforce_dev_status_compatibility: true
+include_wkhtmltopdf: false
+odoo_test_flavor: Both
+odoo_version: 16.0
+org_name: Ankit
+org_slug: Ankit
+rebel_module_groups: []
+repo_description: 'TODO: add repo description.'
+repo_name: widget
+repo_slug: widget
+repo_website:
+
